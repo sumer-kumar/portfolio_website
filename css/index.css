@@ -1,0 +1,57 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Variables */
+:root {
+    /* color variables */
+    --black: #1a1a1d;
+    --grey: #4E4E50;
+    --pink1:#C3073F;
+    --pink2:#950740;
+    --pink3:#6F2232;
+}
+
+div {
+    border: 1px solid red;
+}
+
+/* Naviagtion Bar --------------- started*/
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    margin: 0px 10px;
+}
+
+#logo img {
+    height: 50px;
+    padding: 8px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;    
+}
