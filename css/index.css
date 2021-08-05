@@ -11,17 +11,20 @@ html {
 /* Variables */
 :root {
     /* color variables */
-    --black: #1a1a1d;
+    --grey2: #1a1a1d;
     --grey: #4E4E50;
     --pink1:#C3073F;
     --pink2:#950740;
     --pink3:#6F2232;
     --pink4:#42001d;
+    --black:#000000;
+    --black2:#0a0a0a;
+    --white:#FFFFFF;
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color:var(--white);
 }
 
 div {
@@ -81,8 +84,8 @@ hr {
 }
 
 #navbar ul li a:hover, #navbar ul li a:active {
-    color: black;
-    background-color: white;    
+    color: var(--black);
+    background-color: var(--white);    
 }
 
 /* Navigation bar styling--------------------------ends */
@@ -118,7 +121,7 @@ hr {
 
 .project {
     margin: 20px;
-    background-color: rgba(10, 10, 10, 1);
+    background-color: var(--black2);
     border: 2px solid var(--pink1);
     border-radius: 20px;
     padding: 20px;
@@ -187,7 +190,7 @@ hr {
     border: 2px solid var(--pink2);
     border-radius: 15px 0;
     background-color: var(--grey);
-    color: white;
+    color: var(--white);
 }
 .form-grp textarea
 {
@@ -197,7 +200,7 @@ hr {
     border: 2px solid var(--pink2);
     border-radius: 15px 0;
     background-color: var(--grey);
-    color: white;
+    color: var(--white);
 }
 
 
@@ -207,7 +210,7 @@ hr {
 }
 
 .form-grp input:focus, .form-grp textarea:focus{
-    background-color: white;
+    background-color: var(--white);
     color: var(--pink2);
 }
 
@@ -251,7 +254,7 @@ hr {
 }
 
 .btn {    
-    background-color: rgba(10, 10, 10, 1);
+    background-color: var(--black2);
     color: var(--pink1);
     border: 2px solid var(--pink2);
     border-radius: 50px;
