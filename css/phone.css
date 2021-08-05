@@ -1,0 +1,75 @@
+:root {
+    /* color variables */
+    --black: #1a1a1d;
+    --grey: #4E4E50;
+    --pink1:#C3073F;
+    --pink2:#950740;
+    --pink3:#6F2232;
+    --pink4:#42001d;
+}
+
+
+/* Navigation */
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 0.75rem;
+}
+
+#navbar ul {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Home */
+#home {
+    border-radius: 100px 0px;
+}
+
+
+/* Projects */
+#projects-section {
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+
+/* Skills */
+
+.skill {
+    margin-top: 5px;
+}
+
+#skill-section {
+    flex-direction: column;
+}
+
+.skill img {
+    height: 80px;
+    width: 80px;
+}
+
+/* Contact */
+
+.form-grp input,.form-grp textarea {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+#contact-section form{
+    margin: auto;
+}
+
+#contact-section button {
+    display: block;
+}
+
+
+.h-primary, .h-2{
+    font-size: 2.0rem;
+    color: var(--pink1);
+}

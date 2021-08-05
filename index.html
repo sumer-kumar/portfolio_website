@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my WEBSITE</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" media="screen and (max-width:750px) " href="css/phone.css">
 
 </head>
 
@@ -25,40 +26,80 @@
         </ul>
     </nav>
 
-    <section id="home">
+   <section id="home">
         <h1 class="h-primary">Sumer Kumar</h1>
         <p class="detail-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos aliquam omnis adipisci
             quia maxime.</p>
         <p class="detail-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque voluptates necessitatibus
             sequi error sunt.</p>
-        <button class="btn">Explore</button>
+        <button class="btn">Find More</button>
     </section>
 
-    <section id="projects-section">
+
+    <h2 class="h-2 center">PROJECTS</h2>
+    <section id="projects-section" class="center">
         <div class="project">
             <div class="project-img">
                 <img src="img/project1.png" alt="">
             </div>
-            <h3>Track A Cov</h3>
+            <h3 class="h-3 center">Track A Cov</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, accusantium adipisci. Nihil, magni maiores.
             </p>
         </div>
         <div class="project">
             <div class="project-img">
-                <img src="img/project1.png" alt="">
+                <img src="img/project2.png" alt="">
             </div>
-            <h3>Track A Cov</h3>
+            <h3 class="h-3 center">SafeHo!</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, accusantium adipisci. Nihil, magni maiores.
             </p>
         </div>
         <div class="project">
             <div class="project-img">
-                <img src="img/project1.png" alt="">
+                <img src="img/project3.png" alt="">
             </div>
-            <h3>Track A Cov</h3>
+            <h3 class="h-3 center">WhatsApp Clone</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, accusantium adipisci. Nihil, magni maiores.
             </p>
         </div>
+    </section>
+
+    <h2 class="h-2 center">SKILLS</h2>
+    <section id="skill-section">
+        <div class="skill">
+            <img src="img/cpp.png" alt="">
+        </div>
+        <div class="skill">
+            <img src="img/java.png" alt="">
+        </div>
+        <div class="skill">
+            <img src="img/android.png" alt="">
+        </div>
+        <div class="skill">
+            <img src="img/flutter.png" alt="">
+        </div>
+        <div class="skill">
+            <img src="img/web.png" alt="">
+        </div>
+    </section>
+
+    <h2 class="h-2 center">CONTACT ME</h2>
+    <section id="contact-section">
+        <form>
+            <div class="form-grp">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-grp">
+                <input type="text" name="phone-number" id="phone-number" placeholder="Phone Number" required>
+            </div>
+            <div class="form-grp">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-grp">
+                <textarea name="message" id="ta-message" cols="30" rows="3" placeholder="Message" required></textarea>
+            </div>
+            <button class="form-grp btn">Submit</button>
+        </form>
     </section>
 
 </body>

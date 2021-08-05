@@ -12,16 +12,16 @@
     --pink1:#C3073F;
     --pink2:#950740;
     --pink3:#6F2232;
+    --pink4:#42001d;
 }
 
 body {
-    background-color: var(--black);
+    background-color: black;
     color: white;
-    height: 100%;
 }
 
 div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* Naviagtion Bar --------------- started*/
@@ -31,6 +31,8 @@ div {
     align-items: center;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0px;
 }
 
 #logo {
@@ -56,6 +58,7 @@ div {
     display: block;
     padding: 10px;
     border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #navbar ul li a:hover {
@@ -72,8 +75,11 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height: 85vh;
     justify-content: center;
+    border:10px solid var(--pink2);
+    border-radius: 224px 0px;
+    margin-bottom: 100px;
 }
 
 #home button {
@@ -87,11 +93,22 @@ div {
 
 #projects-section {
     display: flex;
-    flex-direction: row;
+    margin-bottom: 100px;
+    /* flex-wrap: wrap; */
 }
 
 .project {
     margin: 20px;
+    background-color: rgba(10, 10, 10, 1);
+    border: 2px solid var(--pink1);
+    border-radius: 20px;
+    padding: 20px;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+
+.project:hover {
+    box-shadow:inset 0px 0px 20px var(--pink2);
 }
 
 .project-img {
@@ -104,13 +121,102 @@ div {
     margin: auto;
     height: 100px;
 }
-
-
 /* Project Section -----------ends */
 
 
+/* Skill section ------------ starts */
+
+#skill-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.skill {
+    margin: 20px;
+}
+
+.skill img {
+    height: 100px;
+    width: 100px;
+}
+
+/* Skill section ------------ ends */
+
+
+/* Contact Section -------- starts */
+
+#contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.form-grp {
+    padding: 10px 0;
+}
+
+.form-grp input
+{
+    padding: 10px;
+    width: 70vh;
+    text-align: center;
+    border: 2px solid var(--pink2);
+    border-radius: 15px 0;
+    background-color: var(--grey);
+    color: white;
+}
+.form-grp textarea
+{
+    padding: 10px;
+    width: 70vh;
+    text-align: center;
+    border: 2px solid var(--pink2);
+    border-radius: 15px 0;
+    background-color: var(--grey);
+    color: white;
+}
+
+
+::placeholder {
+    color: var(--pink4);
+    opacity: 1;
+}
+
+.form-grp input:focus, .form-grp textarea:focus{
+    background-color: white;
+    color: var(--pink2);
+}
+
+
+
+#contact-section button {
+    display: block;
+    margin: auto;
+}    
+
+/* Contact Section -------- ends */
+
 
 /* Utitlity Classes */
+
+.center {
+    text-align: center;
+}
+
+.h-2 {
+    color: var(--pink1);
+    font-size: 3.5rem;
+}
+
+.h-3 {
+    color: var(--pink1);
+    text-shadow: 0px 0px 6px var(--pink3);
+}
+
 .h-primary{
     font-size: 4.2rem;
     color: var(--pink1);
@@ -124,15 +230,15 @@ div {
     color:gainsboro;
 }
 
-.btn {
-    background-color: transparent;
+.btn {    
+    background-color: rgba(10, 10, 10, 1);
     color: var(--pink1);
     border: 2px solid var(--pink2);
     border-radius: 50px;
     font-size: 1.2rem;
     padding: 20px;
     transition-property: box-shadow;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     cursor: pointer;
 }
 
