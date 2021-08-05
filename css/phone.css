@@ -1,11 +1,14 @@
 :root {
     /* color variables */
-    --black: #1a1a1d;
+    --grey2: #1a1a1d;
     --grey: #4E4E50;
     --pink1:#C3073F;
     --pink2:#950740;
     --pink3:#6F2232;
     --pink4:#42001d;
+    --black:#000000;
+    --black2:#0a0a0a;
+    --white:#FFFFFF;
 }
 
 hr {
