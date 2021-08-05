@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Variables */
 :root {
     /* color variables */
@@ -24,6 +28,17 @@ div {
     /* border: 1px solid red; */
 }
 
+hr {
+    border-top: 8px dotted var(--pink2);
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    width: 200px;
+    margin: auto;
+    margin: 0px auto 50px auto;
+    border-width: 20px;
+}
+
 /* Naviagtion Bar --------------- started*/
 #navbar {
     width: 100%;
@@ -42,8 +57,12 @@ div {
 #logo img {
     height: 50px;
     padding: 8px;
+    transition-property: all;
+    transition-duration: 1s;
 }
-
+#logo img:hover {
+    transform: scale(1.2) rotate(360deg);
+}
 #navbar ul {
     display: flex;
 }
@@ -61,7 +80,7 @@ div {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#navbar ul li a:hover {
+#navbar ul li a:hover, #navbar ul li a:active {
     color: black;
     background-color: white;    
 }
@@ -103,12 +122,13 @@ div {
     border: 2px solid var(--pink1);
     border-radius: 20px;
     padding: 20px;
-    transition-property: box-shadow;
+    transition-property: all;
     transition-duration: 0.5s;
 }
 
 .project:hover {
     box-shadow:inset 0px 0px 20px var(--pink2);
+    transform:scale(1.16) rotate(5deg);
 }
 
 .project-img {

@@ -8,6 +8,16 @@
     --pink4:#42001d;
 }
 
+hr {
+    border-top: 8px dotted var(--pink2);
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    width: 50px;
+    margin: auto;
+    margin: 0px auto 20px auto;
+    border-width: 10px;
+}
 
 /* Navigation */
 #navbar {
@@ -36,7 +46,14 @@
     font-size: 1.5rem;
 }
 
+.project p {
+    font-size: 0.9rem;
+}
 
+.project:hover {
+    box-shadow:inset 0px 0px 20px var(--pink2);
+    transform:scale(1.1) rotate(2deg);
+}
 /* Skills */
 
 .skill {
@@ -72,4 +89,16 @@
 .h-primary, .h-2{
     font-size: 2.0rem;
     color: var(--pink1);
+}
+
+.btn {    
+    background-color: rgba(10, 10, 10, 1);
+    color: var(--pink1);
+    border: 2px solid var(--pink2);
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 8px;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
